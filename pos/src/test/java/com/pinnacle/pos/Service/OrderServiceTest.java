@@ -90,9 +90,6 @@ public class OrderServiceTest {
         assertEquals(answer, orderService.printReceipt(orderItems, "CA"));
     }
 
-
-    //    public static final String LONG_ITEM_NAME = "this is a long-item-name, with length greater than 15";
-//    public static final String LONG_ITEM_WORD = "thisisalongitemword,longerthan15";
     @Test
     void should_exceed_first_colume_when_item_word_longer_than_15() {
         orderItems.add(new OrderItem(new Item(Item.BOOK, 17.99), 1));
